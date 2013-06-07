@@ -1,0 +1,276 @@
+body {
+    margin: 0 auto;
+    max-width: 1024px;
+    background-color: cyan;
+}
+
+.page {    
+    margin: 0 auto;
+    max-width: 1024px;
+    min-width: 800px;
+}
+
+/****Encabezado****/
+.encabezado{
+    position:  absolute;
+    margin-top: 0px;
+    background-color: white;
+    width: 1024px;
+    border: 2px;
+    border-color: blue;
+}
+.logo{
+    width: 150px;
+    position: relative;
+    margin-left: 870px;
+}
+
+.p1{
+    margin: -160px 0 0 0;
+    position: absolute;
+    font-family: Calibri;
+    color: blue;
+    font-stretch: normal;
+    font-size: 18px;
+    font-weight: bold;
+}
+h1{
+    position: absolute;
+    margin: -110px 0 0 550px;
+    font-family: Calibri;
+    color: blue;
+    font-stretch: normal;
+    font-weight: bold;
+    font-size:  60px;
+}
+
+.page-index{
+    position: absolute;
+    margin: 280px 0 0 200px;
+}
+.page-index:after{
+width: 100%;
+height:150px;
+display:block;
+clear:both;
+}
+
+
+.page-wrap{
+    position: absolute;
+    margin: 280px 0px 0px 0px;   
+    padding: -10px; 
+}
+.page-wrap:after{
+width: 100%;
+height:150px;
+display:block;
+clear:both;
+}
+
+aside{
+    position: absolute;
+    margin: 262px 0 0 0;
+    width: 160px;
+    background-color: blue;
+    box-shadow: 7px 5px 35px #999;
+}
+
+.mision{
+    margin-left: 5px;
+    width: 150px;
+}
+.vision {
+    margin-left: 5px;
+    width: 150px;
+}
+
+h2{
+    color:  white;
+    text-align: center;
+    font-family: Calibri;
+    font-size: 35px;
+}
+/**Contenido de Aside**/
+.p2{
+    color: white;
+    /*font-size: 12px;*/
+    text-align: justify;
+    font-family: Calibri;
+}
+
+footer{
+    width: 1024px;
+    height: 150px;
+    margin: 0px auto 0;
+}
+/******MENU 1********/
+.menu{
+    position: absolute;
+    margin: 153px 0 0 -40px;
+}
+#lista1{
+    width: 1024px;
+}
+#menu1 li{
+    display: inline;
+}
+#menu1 li a{    
+    font-family: Calibri;
+    font-size:20px;
+    text-decoration: none;
+    float:left;
+    padding:15px;
+    background-color: #0606ed;
+    color: white;
+    text-align: center;
+    width: 174.8px;
+}
+
+ /****Menu 2*****/
+.menu2{
+    position: absolute;
+    margin: 207.4px 0 0 -40px;
+}
+#lista2{
+    width: 1024px;
+}
+#lista2 li{
+    display: inline;
+}
+#lista2 li a{    
+    font-family: Calibri;
+    text-decoration: none;
+    float:left;
+    padding: 10px;
+    background-color: #ff1f79;
+    border-color: Yellow;
+    border: 5px;
+    color: White;
+    width: 321.3px;
+    text-align: center;
+}
+
+/*quienes somos*/
+.retrato{
+    position: static;
+    width: 100px;
+    height: 150px;
+    margin-left: 85px;
+    margin-top: 10px;
+}
+
+.nombre{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-family: Calibri;
+}
+
+.cargo{
+    color: white;
+    font-family: Calibri;
+}
+
+#padre1{
+    position: absolute;
+    width: 1024px;
+    max-height: 270px;
+    
+}
+#hijo1{
+    position: absolute;
+    width: 270px;
+    margin-left: 50px;
+    background-color: blue;
+    
+}
+#hijo2{
+    position: absolute;
+    width: 270px;
+    margin-left: 380px;;
+    background-color: blue;
+}
+#hijo3{
+    position: absolute;
+    width: 270px;
+    margin-left: 710px;
+    background-color: blue;
+}
+#padre2{
+    position: absolute;
+    max-width: 200px;
+    margin-left: 7%;
+    margin-top: 300px;
+}
+
+#hijo4{
+    position: absolute;
+    width: 270px;
+    margin-left: 220px;
+    background-color: blue;
+    
+}
+#hijo5{
+    position: absolute;
+    width: 270px;
+    margin-left: 550px;
+    background-color: blue;
+}
+
+#padre3{
+    position: absolute;
+    max-width: 200px;
+    margin-left: 7%;
+    margin-top: 600px;
+}
+
+#hijo6{
+    position: absolute;
+    width: 270px;
+    margin-left: 220px;
+    background-color: blue;
+}
+#hijo7{
+     position: absolute;
+    width: 270px;
+    margin-left: 550px;
+    background-color: blue;
+}
+
+/*Contacto*/
+.formulario{
+    position: absolute;
+    margin-left: 300px;
+}
+
+.personas{
+    position: absolute;
+    background-color: blue;
+    min-height: 600px;
+    width: 250px;
+}
+
+.nombres{
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+
+.texto{
+    width: 300px;
+    height: 25px;
+}
+
+.lbl{
+    color: #ff1f79;
+    font-weight: bold;
+    font-family: Calibri;
+    font-size: 30px;
+    text-align: center;
+}
+.td1{
+    width: 300px;
+    height: 30px;
+}
