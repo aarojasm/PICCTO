@@ -18,8 +18,7 @@
             <div class="page-wrap">
                 contenido    
             </div>
+        <?php include "../librerias/include/footer.html" ?>
         </div>
-         
-        <?php include("/libreria/include/footer.html"); ?>
     </body>
 </html>

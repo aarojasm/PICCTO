@@ -1,11 +1,10 @@
 <?php
 include_once "../conexion/conexion.php";
-include_once "../admin/envioCorreo.php";
-
+//include_once "../admin/envioCorreo.php";
     if(isset($_POST['enviar']))
     {
         if($_POST['nombre'] == '' or $_POST['empresa'] == '' or $_POST['telefono'] == '' or $_POST['correo'] == '' or $_POST['direccion'] == '' or $_POST['ciudad'] == '' or  $_POST['cuerpoMensaje'] == '')
-        {echo 'Debe completar todos los campos';}
+        {echo "<script language='JavaScript'>alert('Debe completar todos los campos.'); </script>";}
         else
         {
             $nombre = $_POST['nombre'];
@@ -18,7 +17,7 @@ include_once "../admin/envioCorreo.php";
             $fecha = date('Y-m-d');
             $sql = "INSERT INTO piccto.contacto (nombre, empresa, telefono, email, direccion, ciudad, cuerpo, fecha) VALUES ('$nombre','$empresa','$telefono','$correo','$direccion','$ciudad','$cuerpoMensaje','$fecha')";
             mysql_query($sql);
-            //echo "<script language='JavaScript'>alert('Ha sido registrado su contacto, pronto nos comunicaremos con usted.'); </script>";
+            echo "<script language='JavaScript'>alert('Ha sido registrado su contacto, pronto nos comunicaremos con usted.'); </script>";
             //enviarCorreo('aaron.rojas.martinez@gmail.com','Contacto desde Pagina web', $nombre,$empresa,$telefono,$direccion,$ciudad,$correo,$cuerpoMensaje);
         }
     }
@@ -30,6 +29,11 @@ include_once "../admin/envioCorreo.php";
         <meta charset="utf-8" />
         <title>Contacto</title>
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
+        <style>
+            .p2{
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         <div class="page">
@@ -39,20 +43,39 @@ include_once "../admin/envioCorreo.php";
             <div class="page-wrap">
                 <div class="personas">
                         <div class="nombres">
-                          <p>nombre  </p>
-                          <p>correo</p>
+                          <p class="p2">Aida Torres Piccardo<br/>
+                          Directora General<br/>
+                            atorres@consultorapiccto.cl</p>
                         </div>
                         <div class="nombres">
-                          <p>nombre  </p>
-                          <p>correo</p>
+                          <p class="p2">Egla Torres<br/>
+                          Directora Comercial<br/>
+                            erojas@consultorapiccto.cl</p>
                         </div>
                         <div class="nombres">
-                          <p>nombre  </p>
-                          <p>correo</p>
+                          <p class="p2">Genoveva Candía<br/>
+                          Directora Servicio Social<br/>
+                          gcandia@consultorapiccto.cl</p>
                         </div>
                         <div class="nombres">
-                          <p>nombre  </p>
-                          <p>correo</p>
+                          <p class="p2">Nicole Sotomayor<br/>
+                          Jefa Área Educación<br/>
+                          atorres@consultorapiccto.cl</p>
+                        </div>
+                        <div class="nombres">
+                          <p class="p2">Aicia Mancilla<br/>
+                          Jefa Área Evaluación Curricular<br/>
+                          amancilla@consultorapiccto.cl</p>
+                        </div>
+                        <div class="nombres">
+                          <p class="p2">Alejandra Valencia<br/>
+                          Especialista Área Matemática<br/>
+                          avalencia@consultorapiccto.cl</p>
+                        </div>
+                        <div class="nombres">
+                          <p class="p2">Lucila Avilés<br/>
+                          Especialista Lenguaje y Comunicación<br/>
+                          laviles@consultorapiccto.cl</p>
                         </div>
                 </div>
                 <form action="" method="post">
@@ -94,7 +117,7 @@ include_once "../admin/envioCorreo.php";
 				    </div>
                 </form>
             </div>
+        <?php include "../librerias/include/footer.html" ?>
         </div>
-         
     </body>
 </html>

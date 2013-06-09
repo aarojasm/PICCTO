@@ -19,5 +19,6 @@
                 contenido    
             </div>
         </div>
+        <?php include "../librerias/include/footer.html" ?>
     </body>
 </html>

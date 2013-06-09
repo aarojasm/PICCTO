@@ -20,6 +20,6 @@
         
         </div>
          
-        <?php include("/libreria/include/footer.html"); ?>
+        <?php include "../librerias/include/footer.html" ?>
     </body>
 </html>

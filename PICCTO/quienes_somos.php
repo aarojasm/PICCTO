@@ -16,7 +16,6 @@
             <?php include "../librerias/include/menu2.html" ?>
 
             <div class="page-wrap">
-                
                 <div id="padre1">
                     <div id="hijo1">
                         <img class="retrato" alt="retrato" src="../librerias/img/retrato/aida.png" />
@@ -59,7 +58,7 @@
                     </div>
                 </div> 
             </div>
-        
+        <?php include "../librerias/include/footer.html" ?>
         </div>
     </body>
 </html>

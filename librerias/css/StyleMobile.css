@@ -2,19 +2,18 @@ body {
     margin: 0 auto;
     max-width: 1024px;
     background-color: cyan;
-    height: auto;
 }
 
 .page {    
     margin: 0 auto;
     max-width: 1024px;
-    padding-bottom: 20px;
+    min-width: 800px;
 }
 
 /****Encabezado****/
 .encabezado{
     position:  absolute;
-    top: 0;
+    margin-top: 0px;
     background-color: white;
     width: 1024px;
     border: 2px;
@@ -24,7 +23,6 @@ body {
     width: 150px;
     position: relative;
     margin-left: 870px;
-    border: 0px;
 }
 
 .p1{
@@ -60,8 +58,8 @@ clear:both;
 
 .page-wrap{
     position: absolute;
-    top: 280px;
-    height: auto;
+    margin: 280px 0px 0px 0px;   
+    padding: -10px; 
 }
 .page-wrap:after{
 width: 100%;
@@ -101,21 +99,10 @@ h2{
     font-family: Calibri;
 }
 
-html #page #footer
-{
-}
-
-.pFotter{
-    color: red;
-}
-#footer{
-    position: absolute;
+footer{
     width: 1024px;
-    height: 30px;
-    font-family: Calibri;
-    font-size: 25px;
-    text-align: center;
-    font-weight: bold;
+    height: 150px;
+    margin: 0px auto 0;
 }
 /******MENU 1********/
 .menu{
@@ -262,12 +249,13 @@ html #page #footer
     position: absolute;
     background-color: blue;
     min-height: 600px;
-    width: 270px;
+    width: 250px;
 }
 
 .nombres{
-    padding-left: -5px;
-    padding-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-bottom: 15px;
 }
 
 .texto{
@@ -286,17 +274,3 @@ html #page #footer
     width: 300px;
     height: 30px;
 }
-
-/****/
-#redeSociales{
-    position: absolute;
-    margin-top: 130px;
-}
-
-.icono{
-    width: 30px;
-    height: 30px;
-}
-
-
-/**Footer**/
