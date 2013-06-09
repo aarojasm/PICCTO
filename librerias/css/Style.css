@@ -70,6 +70,12 @@ display:block;
 clear:both;
 }
 
+#page-footer{
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+}
+
 aside{
     position: absolute;
     margin: 262px 0 0 0;
