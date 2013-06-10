@@ -1,5 +1,12 @@
 <?php
-    
+include_once "/conexion/conexion.php";
+   
+    //$sql = "SELECT titulo, cuerpo from PICCTO.noticia order by fecha desc";
+    //$result = mysql_query($sql);
+    //while($resi = mysql_fetch_array($result))
+    //{
+    //    echo $resi["cuerpo"]."\r\n";
+    //}
 ?>
 
 <!DOCTYPE html>
@@ -9,16 +16,17 @@
         <title>PICCTO</title>
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+        <meta name="description" content="Página de Inicio, que muestra las ultimas noticias sobre nosotros"/>
     </head>
     <body>
         <div id="page" class="page">
-            <?php include "/librerias/include/encabezado.html" ?>
-            <?php include "/librerias/include/menu1.html" ?>
-            <?php include "/librerias/include/menu2.html" ?>
-            <?php include "/librerias/include/aside.html" ?>
+            <?php include "/librerias/include/encabezado.html"; ?>
+            <?php include "/librerias/include/menu1.html"; ?>
+            <?php include "/librerias/include/menu2.html"; ?>
+            <?php include "/librerias/include/aside.html"; ?>
 
             <div class="page-index">
-                contenido    
+                <?php include "/librerias/include/noticias.php";?>
             </div>
         <?php include "/librerias/include/footer.html" ?>
         </div>

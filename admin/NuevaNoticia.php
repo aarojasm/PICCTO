@@ -22,6 +22,7 @@ include_once "../conexion/conexion.php";
         <meta charset="utf-8" />
         <title>Nueva Noticia</title>
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="page">

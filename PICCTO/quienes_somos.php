@@ -8,6 +8,8 @@
         <meta charset="utf-8" />
         <title>Quiénes Somos</title>
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
+        <meta name="description" content="Página de integrantes de la empresa"/>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="page">

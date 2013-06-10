@@ -29,6 +29,8 @@ include_once "../conexion/conexion.php";
         <meta charset="utf-8" />
         <title>Contacto</title>
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
+        <meta name="description" content="Página para que personas o empresas nos puedan contactar"/>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
         <style>
             .p2{
                 text-align: center;

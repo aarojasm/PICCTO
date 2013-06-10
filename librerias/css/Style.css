@@ -1,5 +1,5 @@
 body {
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     max-width: 1024px;
     background-color: cyan;
     height: auto;
@@ -49,6 +49,7 @@ h1{
 .page-index{
     position: absolute;
     margin: 280px 0 0 200px;
+    height: auto;
 }
 .page-index:after{
 width: 100%;
@@ -65,15 +66,17 @@ clear:both;
 }
 .page-wrap:after{
 width: 100%;
-height:150px;
-display:block;
-clear:both;
+height: auto;
 }
 
 #page-footer{
     position: relative;
     font-size: 20px;
     text-align: center;
+}
+.page-footer{
+    width: 1024px;
+    height: 100px;
 }
 
 aside{
