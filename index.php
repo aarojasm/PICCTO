@@ -1,12 +1,5 @@
 <?php
-include_once "/conexion/conexion.php";
-   
-    //$sql = "SELECT titulo, cuerpo from PICCTO.noticia order by fecha desc";
-    //$result = mysql_query($sql);
-    //while($resi = mysql_fetch_array($result))
-    //{
-    //    echo $resi["cuerpo"]."\r\n";
-    //}
+    include_once "/conexion/conexion.php";
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +21,7 @@ include_once "/conexion/conexion.php";
             <div class="page-index">
                 <?php include "/librerias/include/noticias.php";?>
             </div>
-        <?php include "/librerias/include/footer.html" ?>
+        <!--<?php include "/librerias/include/footer.html" ?>-->
         </div>
     </body>
 </html>

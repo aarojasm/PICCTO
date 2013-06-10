@@ -59,7 +59,6 @@
         // Cabecera que especifica que es un HMTL
         $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
         $cabeceras .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-
         mail($destinatario,'Contacto página',$htmlCorreo,$cabeceras)
     }
 ?>

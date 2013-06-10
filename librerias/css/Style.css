@@ -73,10 +73,11 @@ height: auto;
     position: relative;
     font-size: 20px;
     text-align: center;
+    top: 600px;
 }
 .page-footer{
     width: 1024px;
-    height: 100px;
+    height: 30px;
 }
 
 aside{
@@ -308,4 +309,12 @@ html #page #footer
 }
 
 
-/**Footer**/
+/**noticias**/
+.divTitulo{
+    font-size: 20px;
+    color: white;
+}
+
+.divCuerpo{
+    
+}

@@ -2,10 +2,6 @@
     include_once "../conexion/conexion.php";
     $sql = "SELECT titulo, cuerpo from PICCTO.noticia order by fecha desc";
     $result = mysql_query($sql);
-    //echo $result;
-    while($row = mysql_fetch_row($result)){
-        
-    }
 ?>
 
 <!DOCTYPE html>
@@ -19,21 +15,14 @@
     </head>
     <body>
         <div class="page">
-            <!--<?php include "../librerias/include/encabezado.html" ?>
+            <?php include "../librerias/include/encabezado.html" ?>
             <?php include "../librerias/include/menu1.html" ?>
-            <?php include "../librerias/include/menu2.html" ?>-->
+            <?php include "../librerias/include/menu2.html" ?>
+
             <div class="page-wrap">
-                <!--<?
-                    include_once "../conexion/conexion.php";
-                    $sql = "SELECT titulo, cuerpo from PICCTO.noticia order by fecha desc";
-                    $result = mysql_query($sql); 
-                    while($row = mysql_fetch_array($result))
-                    {
-                        echo $row['titulo'];
-                    }
-                ?>-->
+                <?php include "/librerias/include/noticias.php";?>
             </div>
-        <?php include "../librerias/include/footer.html" ?>
+        <!--<?php include "../librerias/include/footer.html" ?>-->
         </div>
     </body>
 </html>

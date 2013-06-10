@@ -21,6 +21,6 @@
                 <img alt="Página en Construcción" src="../librerias/img/pagina_en_construccion.jpg"/>   
             </div>
         </div> 
-        <?php include "../librerias/include/footer.html"; ?>
+        <!--<?php include "../librerias/include/footer.html"; ?>-->
     </body>
 </html>

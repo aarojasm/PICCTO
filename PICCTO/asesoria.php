@@ -21,6 +21,6 @@
                 contenido    
             </div>
         </div>
-        <?php include "../librerias/include/footer.html" ?>
+        <!--<?php include "../librerias/include/footer.html" ?>-->
     </body>
 </html>
