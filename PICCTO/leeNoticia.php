@@ -13,12 +13,11 @@
         <title></title>
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
     </head>
-    <body>
-            <?php include "../librerias/include/encabezado.html" ?>
-            <?php include "../librerias/include/menu1.html" ?>
-            <?php include "../librerias/include/menu2.html" ?>
-
-        <div class="page-wrap">   
+    <body>       
+        <?php include "../librerias/include/encabezado.html" ?>
+        <?php include "../librerias/include/menu1.html" ?>
+        <?php include "../librerias/include/menu2.html" ?>
+        <div class="page">
             <?php
                 $row = mysql_fetch_array($result);
                 //echo $result;

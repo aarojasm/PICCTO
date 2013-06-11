@@ -6,14 +6,14 @@ body {
 }
 
 .page {    
-    margin: 0 auto;
-    max-width: 1024px;
-    padding-bottom: 20px;
+    position: relative;
+    width: 1024px;
+    top: 93px;
 }
 
 /****Encabezado****/
 .encabezado{
-    position:  absolute;
+    position:  relative;
     top: 0;
     background-color: white;
     width: 1024px;
@@ -47,9 +47,10 @@ h1{
 }
 
 .page-index{
-    position: absolute;
-    margin: 280px 0 0 200px;
+    position: relative;
     height: auto;
+    margin-left: 200px;
+    margin-top: 0px;
 }
 .page-index:after{
 width: 100%;
@@ -58,36 +59,35 @@ display:block;
 clear:both;
 }
 
-
 .page-wrap{
-    position: absolute;
-    top: 280px;
+    position: relative;
     height: auto;
-}
-.page-wrap:after{
-width: 100%;
-height: auto;
+    top: 90px;
 }
 
 #page-footer{
-    /*position: relative;
+    position: relative;
     font-size: 20px;
     text-align: center;
-    top: 600px;*/
     float:left;
     width:100%;
-    padding:5%;
-    top: 0;
+    top: 10px;
 }
 .page-footer{
     width: 1024px;
     height: 30px;
 }
 
+.pFooter{
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+}
+
 aside{
     float: left;
-    top: 262px;
-    position: absolute;
+    /*top: 262px;*/
+    position: relative;
     width: 170px;
     background-color: blue;
     box-shadow: 7px 5px 35px #999;
@@ -115,30 +115,11 @@ h2{
     font-family: Calibri;
 }
 
-html #page #footer
-{
-}
-
-.pFotter{
-    color: red;
-}
-#footer{
-    /*position: absolute;
-    width: 1024px;
-    height: 30px;
-    font-family: Calibri;
-    font-size: 25px;
-    text-align: center;
-    font-weight: bold;*/
-    float:left;
-    width:100%;
-    padding:5%;
-    top: 0;
-}
 /******MENU 1********/
 .menu{
-    position: absolute;
-    margin: 153px 0 0 -40px;
+    position: relative;
+    margin: -15px 0 0 -40px;
+    height: auto;
 }
 #lista1{
     width: 1024px;
@@ -160,8 +141,9 @@ html #page #footer
 
  /****Menu 2*****/
 .menu2{
-    position: absolute;
-    margin: 207.4px 0 0 -40px;
+    position: relative;
+    margin: 0px 0 0 -40px;
+    height: auto;
 }
 #lista2{
     width: 1024px;
@@ -184,14 +166,16 @@ html #page #footer
 
 /*quienes somos*/
 .retrato{
-    position: static;
-    width: 100px;
-    height: 150px;
-    margin-left: 85px;
-    margin-top: 10px;
+    position: relative;
+    width: 80px;
+    height: 100px;
+    margin-left: 95px;
+    margin-top: 0px;
+    padding-top: 30px;
 }
 
 .nombre{
+    position: relative;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -207,80 +191,99 @@ html #page #footer
 #padre1{
     position: absolute;
     width: 1024px;
-    max-height: 270px;
-    
+    top: -285px;
 }
 #hijo1{
-    position: absolute;
-    width: 270px;
     margin-left: 50px;
     background-color: blue;
-    
-}
-#hijo2{
-    position: absolute;
+    position: relative;
     width: 270px;
-    margin-left: 380px;
+    margin-top: 0px;
     background-color: blue;
+    height: 250px;
+}
+
+#hijo2{
+    position: relative;
+    width: 270px;
+    margin-left: 375px;
+    margin-top: -250px;
+    background-color: blue;
+    height: 250px;
 }
 #hijo3{
-    position: absolute;
+    position: relative;
     width: 270px;
     margin-left: 710px;
+    margin-top: -250px;
     background-color: blue;
+    height: 250px;
 }
 #padre2{
-    position: absolute;
-    max-width: 200px;
-    margin-left: 7%;
+    position: relative;
+    width: auto;
     margin-top: 300px;
+    height: 250px;
 }
 
 #hijo4{
-    position: absolute;
+    position: relative;
     width: 270px;
-    margin-left: 220px;
+    height: 250px;
+    margin-left: 200px;
     background-color: blue;
-    
+    margin-top: 0px;
 }
 #hijo5{
-    position: absolute;
+    position: relative;
     width: 270px;
+    height: 250px;
     margin-left: 550px;
+    margin-top: -250px;
     background-color: blue;
 }
 
 #padre3{
-    position: absolute;
-    max-width: 200px;
-    margin-left: 7%;
-    margin-top: 600px;
+    position: relative;
+    width: 100%;
+    top: 30px;
+    height: 350px;
 }
 
 #hijo6{
-    position: absolute;
+    position: relative;
     width: 270px;
-    margin-left: 220px;
+    height: 250px;
+    margin-left: 200px;
     background-color: blue;
 }
 #hijo7{
-     position: absolute;
+     position: relative;
     width: 270px;
+    height: 250px;
+    top: -250px;
     margin-left: 550px;
     background-color: blue;
 }
 
 /*Contacto*/
-.formulario{
+.tblFormulario{
     position: absolute;
+     margin-top: 20px;
+}
+.formulario{
+    position: relative;
     margin-left: 300px;
+    margin-top: 0px;
+    height: 350px;
 }
 
 .personas{
-    position: absolute;
+    position: relative;
     background-color: blue;
-    min-height: 600px;
     width: 270px;
+    top: -363px;
+    height: 700px;
 }
 
 .nombres{
@@ -319,8 +322,9 @@ html #page #footer
 
 /**noticias**/
 .divTitulo{
-    font-size: 20px;
-    color: white;
+    position: relative;
+    margin-top: 0px;
+    height: auto;
 }
 
 .divCuerpo{

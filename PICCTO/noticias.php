@@ -1,7 +1,5 @@
 <?php
-    include_once "../conexion/conexion.php";
-    $sql = "SELECT titulo, cuerpo from PICCTO.noticia order by fecha desc";
-    $result = mysql_query($sql);
+    
 ?>
 
 <!DOCTYPE html>
@@ -13,16 +11,15 @@
         <meta name="description" content="Página de noticias de la empresa"/>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
     </head>
-    <body>
+    <body>       
+        <?php include "../librerias/include/encabezado.html" ?>
+        <?php include "../librerias/include/menu1.html" ?>
+        <?php include "../librerias/include/menu2.html" ?>
         <div class="page">
-            <?php include "../librerias/include/encabezado.html" ?>
-            <?php include "../librerias/include/menu1.html" ?>
-            <?php include "../librerias/include/menu2.html" ?>
-
             <div class="page-wrap">
-                <?php include "/librerias/include/noticias.php";?>
+                <?php include "../librerias/include/noticias.php";?>
             </div>
-        <!--<?php include "../librerias/include/footer.html" ?>-->
         </div>
+        <?php include "../librerias/include/footer.html" ?>
     </body>
 </html>

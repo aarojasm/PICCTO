@@ -11,13 +11,12 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
         <meta name="description" content="Página de Inicio, que muestra las ultimas noticias sobre nosotros"/>
     </head>
-    <body>
-        <div id="page" class="page">
-            <?php include "/librerias/include/encabezado.html"; ?>
-            <?php include "/librerias/include/menu1.html"; ?>
-            <?php include "/librerias/include/menu2.html"; ?>
-            <?php include "/librerias/include/aside.html"; ?>
-
+    <body>       
+        <?php include "/librerias/include/encabezado.html" ?>
+        <?php include "/librerias/include/menu1.html"; ?>
+        <?php include "/librerias/include/menu2.html"; ?>
+        <?php include "/librerias/include/aside.html"; ?>
+        <div class="page">
             <div class="page-index">
                 <?php include "/librerias/include/noticias.php";?>
             </div>
