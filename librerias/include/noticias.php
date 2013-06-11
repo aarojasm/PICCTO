@@ -3,7 +3,7 @@
     $sql = "SELECT titulo, cuerpo from PICCTO.noticia order by fecha desc";
     $result = mysql_query($sql);
 ?>
-<div>
+<div class="noticias">
     <?php 
         while($row = mysql_fetch_array($result))
         {

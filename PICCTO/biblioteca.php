@@ -17,7 +17,8 @@
         <?php include "../librerias/include/menu2.html" ?>
         <div class="page">
             <div class="page-wrap">
-                <img alt="Página en Construcción" src="../librerias/img/pagina_en_construccion.jpg"/>   
+                <center><img class="imgConstruccion" alt="Página en Construcción" src="../librerias/img/pagina_en_construccion.jpg"/>   </center>
+                <div style="visibility: hidden;"></div>
             </div>
         </div> 
         <?php include "../librerias/include/footer.html" ?>

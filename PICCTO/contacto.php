@@ -44,7 +44,7 @@ include_once "../conexion/conexion.php";
         <div class="page-wrap">
 			<div class="formulario">
                 <form action="" method="post">
-					<table class="tblFormulario" style="width: 723px;">
+					<table class="tblFormulario">
 							<tr>
 								<td class="td1"><label class="lbl">Nombre</label></td>
 								<td><input  class="texto" type = "text" name = "nombre" required placeholder="Ingrese nombre"/> </td>

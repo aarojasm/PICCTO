@@ -71,7 +71,7 @@ clear:both;
     text-align: center;
     float:left;
     width:100%;
-    top: 10px;
+    top: 50px;
 }
 .page-footer{
     width: 1024px;
@@ -191,7 +191,7 @@ h2{
 #padre1{
     position: absolute;
     width: 1024px;
-    top: -285px;
+    top: -300px;
 }
 #hijo1{
     margin-left: 50px;
@@ -222,7 +222,7 @@ h2{
 #padre2{
     position: relative;
     width: auto;
-    margin-top: 300px;
+    margin-top: 250px;
     height: 250px;
 }
 
@@ -283,7 +283,6 @@ h2{
     background-color: blue;
     width: 270px;
     top: -363px;
-    height: 700px;
 }
 
 .nombres{
@@ -324,6 +323,7 @@ h2{
 .divTitulo{
     position: relative;
     margin-top: 0px;
+    width: auto;
     height: auto;
 }
 
@@ -338,4 +338,11 @@ h2{
 }
 .cuerpo{
     font-family: Helvetica;
+}
+
+/*Biblioteca*/
+.imgConstruccion{
+    position: relative;
+    top: -180px;
+    width: 500px;
 }
