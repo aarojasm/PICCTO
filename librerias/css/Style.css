@@ -70,10 +70,14 @@ height: auto;
 }
 
 #page-footer{
-    position: relative;
+    /*position: relative;
     font-size: 20px;
     text-align: center;
-    top: 600px;
+    top: 600px;*/
+    float:left;
+    width:100%;
+    padding:5%;
+    top: 0;
 }
 .page-footer{
     width: 1024px;
@@ -81,19 +85,19 @@ height: auto;
 }
 
 aside{
+    float: left;
+    top: 262px;
     position: absolute;
-    margin: 262px 0 0 0;
-    width: 160px;
+    width: 170px;
     background-color: blue;
     box-shadow: 7px 5px 35px #999;
 }
 
 .mision{
     margin-left: 5px;
-    width: 150px;
+    width: 160px;
 }
 .vision {
-    margin-left: 5px;
     width: 150px;
 }
 
@@ -119,13 +123,17 @@ html #page #footer
     color: red;
 }
 #footer{
-    position: absolute;
+    /*position: absolute;
     width: 1024px;
     height: 30px;
     font-family: Calibri;
     font-size: 25px;
     text-align: center;
-    font-weight: bold;
+    font-weight: bold;*/
+    float:left;
+    width:100%;
+    padding:5%;
+    top: 0;
 }
 /******MENU 1********/
 .menu{
@@ -212,7 +220,7 @@ html #page #footer
 #hijo2{
     position: absolute;
     width: 270px;
-    margin-left: 380px;;
+    margin-left: 380px;
     background-color: blue;
 }
 #hijo3{
@@ -317,4 +325,13 @@ html #page #footer
 
 .divCuerpo{
     
+}
+
+/*Noticias.php*/
+.titulo{
+    font-family: Helvetica;
+    font-size: 25px;
+}
+.cuerpo{
+    font-family: Helvetica;
 }

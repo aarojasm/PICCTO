@@ -65,7 +65,7 @@ include_once "../conexion/conexion.php";
                           atorres@consultorapiccto.cl</p>
                         </div>
                         <div class="nombres">
-                          <p class="p2">Aicia Mancilla<br/>
+                          <p class="p2">Alicia Mancilla<br/>
                           Jefa Área Evaluación Curricular<br/>
                           amancilla@consultorapiccto.cl</p>
                         </div>

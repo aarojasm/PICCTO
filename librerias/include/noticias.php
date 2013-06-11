@@ -7,9 +7,12 @@
     <?php 
         while($row = mysql_fetch_array($result))
         {
-            echo "<div class=\"divTitulo\"><a href=\" ../leeNoticias.php\">".$row['titulo']."</a></div>";
+            $url = str_replace(" ","-",$row['titulo']);
+            echo $url;
+            echo "<div class=\"divTitulo\"><a href=\" ../PICCTO/leeNoticia.php?noticia=$url\">".$row['titulo']."</a></div>";
             echo "<div class=\"divCuerpo\">".$row['cuerpo']."</div>";
             echo "<br/>";
         }
     ?>
+    <div style="visibility: hidden;"></div>
 </div>
