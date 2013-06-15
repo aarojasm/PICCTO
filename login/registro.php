@@ -52,10 +52,9 @@ include_once "/conexion/conexion.php";
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
     </head>
     <body>
-        <div>
-            <?php include "../librerias/include/encabezado.html" ?>
-            <?php include "../librerias/include/menu1.html" ?>
-            <?php include "../librerias/include/menu2.html" ?>
+        <?php include "../librerias/include/encabezado.html" ?>
+        <?php include "../librerias/include/menu1.html" ?>
+        <?php include "../librerias/include/menu2.html" ?>
             <div class="page-wrap">
                 <form action="" method="post" class="registro">
                     <table>
@@ -87,6 +86,5 @@ include_once "/conexion/conexion.php";
                     <div><input type="submit" name="enviar" value="Registrar"></div>
                 </form>
             </div>
-        </div>
     </body>
 </html>

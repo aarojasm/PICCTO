@@ -35,6 +35,9 @@ include_once "../conexion/conexion.php";
             .p2{
                 text-align: center;
             }
+            .page-wrap{
+                height: 750px;
+            }
         </style>
     </head>
     <body>       
@@ -62,10 +65,11 @@ include_once "../conexion/conexion.php";
 								<td><input class="texto" type="email" name="correo" required placeholder="Ingrese Email"/></td>
 							</tr>
 							<tr>
-								<td class="td1"><label class="lbl">Dirección</label> </td>
+								<td class="td1"><label class="lbl">Dirección</label></td>
+                                <td><input class="texto" type="text" name="direccion" required placeholder="Ingrese Dirección"/></td>
 							</tr>
 							<tr>
-								<td class="td1"><label class="lbl">Cuidad</label> </td>
+								<td class="td1"><label class="lbl">Ciudad</label> </td>
 								<td><input class="texto" type="text" name="ciudad" required placeholder="Ingrese Ciudad"/></td>
 							</tr>
 							<tr>

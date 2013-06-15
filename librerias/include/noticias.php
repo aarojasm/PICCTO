@@ -8,7 +8,7 @@
         while($row = mysql_fetch_array($result))
         {
             $url = str_replace(" ","-",$row['titulo']);
-            echo "<div class=\"divTitulo\"><a href=\" ../PICCTO/leeNoticia.php?noticia=$url\">".$row['titulo']."</a></div>";
+            echo "<div class=\"divTitulo\"><a href=\" ../PICCTO/leeNoticia.php?noticia=$url\">".$row['titulo']."</a><div></div></div>";
             echo "<div class=\"divCuerpo\">".$row['cuerpo']."</div>";
             echo "<br/>";
         }

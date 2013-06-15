@@ -9,11 +9,7 @@
             $usuario = $_POST['usuario'];
             $clave = $_POST['password'];
             $sql = "SELECT COUNT(usuario) from piccto.usuario where usuario = '".$usuario."' AND password = '".$clave."'";
-            echo $sql;
             $result = mysql_query($sql);
-            echo $usuario;
-            echo $clave;
-            echo $result;
             $_SESSION['usuario'] = $usuario;
             $_SESSION['rol'] = $rol;
         }
@@ -31,16 +27,23 @@
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
         <meta name="description" content="Página que realiza el login para el acceso a la intranet."/>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+        <style>
+            /*.page{
+                position: relative;
+                top: 0px;
+            }
+            .page-wrap{
+                position: relative;
+                top: 0px;
+            }*/
+        </style>
     </head>
-    <body><div class="page">
+    <body>
             <?php include "../librerias/include/encabezado.html" ?>
             <?php include "../librerias/include/menu1.html" ?>
             <?php include "../librerias/include/menu2.html" ?>
+        <div class="page">  
             <div class="page-wrap">
-                <?php 
-                    $row = mysql_fetch_array($result);
-                    print_r($row);
-                ?>
                 <form action="" method="post" class="registro">
                     <div><label>Usuario:</label> <input type="text" required placeholder="Ingrese Usuario" name="usuario"></div>
                     <div><label>Clave:</label> <input type="password" required placeholder="Ingrese Password" name="password"></div>
@@ -48,6 +51,5 @@
                 </form> 
             </div>
         </div>
-        
     </body>
 </html>

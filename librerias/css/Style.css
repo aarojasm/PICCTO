@@ -1,7 +1,7 @@
 body {
     margin: 0 auto 0 auto;
     max-width: 1024px;
-    background-color: cyan;
+    background-color: #cecccc;
     height: auto;
 }
 
@@ -15,7 +15,7 @@ body {
 .encabezado{
     position:  relative;
     top: 0;
-    background-color: white;
+    background-color: #cecccc;
     width: 1024px;
     border: 2px;
     border-color: blue;
@@ -65,6 +65,7 @@ clear:both;
     top: 90px;
 }
 
+/*Footer*/
 #page-footer{
     position: relative;
     font-size: 20px;
@@ -75,12 +76,17 @@ clear:both;
 }
 .page-footer{
     width: 1024px;
-    height: 30px;
+    height: 50px;
 }
 
 .pFooter{
-    color: red;
+    color: #ff1f79;
     font-weight: bold;
+    font-size: 45px;
+    font-family: Calibri;
+}
+.ppFooter{
+    font-family: Calibri;
     font-size: 30px;
 }
 
@@ -322,7 +328,7 @@ h2{
 /**noticias**/
 .divTitulo{
     position: relative;
-    margin-top: 0px;
+    top: 0px;
     width: auto;
     height: auto;
 }
@@ -345,4 +351,9 @@ h2{
     position: relative;
     top: -180px;
     width: 500px;
+}
+
+/*Login*/
+.registro{
+    top: 0;
 }

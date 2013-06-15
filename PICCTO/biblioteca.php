@@ -10,6 +10,11 @@
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
         <meta name="description" content="Página de contenido multimedia"/>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+        <style>
+            .page-wrap{
+                height: 600px;
+            }
+        </style>
     </head>
     <body>       
         <?php include "../librerias/include/encabezado.html" ?>
