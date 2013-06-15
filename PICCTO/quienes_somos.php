@@ -16,10 +16,10 @@
             }
         </style>
     </head>
-    <body>       
-        <?php include "../librerias/include/encabezado.html" ?>
-        <?php include "../librerias/include/menu1.html" ?>
-        <?php include "../librerias/include/menu2.html" ?>
+    <body>              
+        <?php include '../librerias/include/encabezado.html';
+            include '../librerias/include/menu1.html'; 
+            include '../librerias/include/menu2.html';?>
         <div class="page">
             <div class="page-wrap">
                 <div id="padre1">
@@ -77,6 +77,6 @@
             </div>
             <div style="visibility: hidden"></div>
         </div>
-        <?php include "../librerias/include/footer.html" ?>
+        <?php include '../librerias/include/footer.html'; ?>
     </body>
 </html>

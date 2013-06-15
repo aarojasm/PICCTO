@@ -11,15 +11,15 @@
         <meta name="description" content="Página de asesorías realizadas"/>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
     </head>
-    <body>       
-        <?php include "../librerias/include/encabezado.html" ?>
-        <?php include "../librerias/include/menu1.html" ?>
-        <?php include "../librerias/include/menu2.html" ?>
+    <body>
+        <?php include '../librerias/include/encabezado.html';
+            include '../librerias/include/menu1.html'; 
+            include '../librerias/include/menu2.html';?>
         <div class="page">
             <div class="page-wrap">
                 contenido    
             </div>
         </div>
-        <?php include "../librerias/include/footer.html" ?>
+        <?php include '../librerias/include/footer.html'; ?>
     </body>
 </html>

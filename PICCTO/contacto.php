@@ -1,5 +1,5 @@
 <?php
-include_once "../conexion/conexion.php";
+include_once '../conexion/conexion.php';
 //include_once "../admin/envioCorreo.php";
     if(isset($_POST['enviar']))
     {
@@ -40,10 +40,10 @@ include_once "../conexion/conexion.php";
             }
         </style>
     </head>
-    <body>       
-        <?php include "../librerias/include/encabezado.html" ?>
-        <?php include "../librerias/include/menu1.html" ?>
-        <?php include "../librerias/include/menu2.html" ?>
+    <body>        
+        <?php include '../librerias/include/encabezado.html';
+            include '../librerias/include/menu1.html'; 
+            include '../librerias/include/menu2.html';?>
         <div class="page-wrap">
 			<div class="formulario">
                 <form action="" method="post">
@@ -83,8 +83,8 @@ include_once "../conexion/conexion.php";
 					</table>
                 </form>
 			</div>
-            <?php include "../librerias/include/personas.html";?>
+            <?php include '../librerias/include/personas.html';?>
         </div>
-        <?php include "../librerias/include/footer.html" ?>
+        <?php include '../librerias/include/footer.html'; ?>
     </body>
 </html>
