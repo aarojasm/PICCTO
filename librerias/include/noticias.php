@@ -1,11 +1,10 @@
 <?php
-    include_once '../conexion/conexion.php';
+    include '../conexion/conexion.php';
     $sql = "SELECT titulo, cuerpo from PICCTO.noticia order by fecha desc";
-    $result = mysql_query($sql);
 ?>
 <div class="noticias">
     <?php 
-        while($row = mysql_fetch_array($result))
+        while($row = mysql_query($sql))
         {
             $url = str_replace(" ","-",$row['titulo']);
             echo "<div class=\"divTitulo\"><a href=\" ../PICCTO/leeNoticia.php?noticia=$url\">".$row['titulo']."</a><div></div></div>";

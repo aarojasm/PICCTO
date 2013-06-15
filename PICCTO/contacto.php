@@ -1,5 +1,5 @@
 <?php
-include_once '../conexion/conexion.php';
+include '../conexion/conexion.php';
 //include_once "../admin/envioCorreo.php";
     if(isset($_POST['enviar']))
     {
