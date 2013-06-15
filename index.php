@@ -1,5 +1,5 @@
 <?php
-    include_once "/conexion/conexion.php";
+    include_once '/conexion/conexion.php';
 ?>
 
 <!DOCTYPE html>
@@ -12,15 +12,15 @@
         <meta name="description" content="Página de Inicio, que muestra las ultimas noticias sobre nosotros"/>
     </head>
     <body>       
-        <?php include "/librerias/include/encabezado.html" ?>
-        <?php include "/librerias/include/menu1.html"; ?>
-        <?php include "/librerias/include/menu2.html"; ?>
-        <?php include "/librerias/include/aside.html"; ?>
+        <?php include '/librerias/include/encabezado.html';
+            include '/librerias/include/menu1.html'; 
+            include '/librerias/include/menu2.html'; 
+            include 'librerias/include/aside.html'; ?>
         <div class="page">
             <div class="page-index">
-                <?php include "/librerias/include/noticias.php";?>
+                <?php include '/librerias/include/noticias.php';?>
             </div>
-        <?php include "/librerias/include/footer.html" ?>
+        <?php include '/librerias/include/footer.html'; ?>
         </div>
     </body>
 </html>
