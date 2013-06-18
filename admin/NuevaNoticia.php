@@ -1,13 +1,13 @@
 <?php
-include_once "../conexion/conexion.php";
+    include_once '../conexion/conexion.php';
     if(isset($_POST['guardar']))
     {
         if($_POST['titulo'] == '' or $_POST['cuerpo'] == '')
         { echo 'Debe completar todos los campos'; }
         else
         {
-            $titulo = $_POST['titulo'];
-            $cuerpo = $_POST['cuerpo'];
+            $titulo = $_POST[titulo];
+            $cuerpo = $_POST[cuerpo];
             $fecha = date('Y-m-d');
             $sql = "INSERT INTO piccto.noticia (titulo,cuerpo,fecha) values ('$titulo','$cuerpo','$fecha')";
             mysql_query($sql);
@@ -26,9 +26,9 @@ include_once "../conexion/conexion.php";
     </head>
     <body>
         <div class="page">
-            <?php include "../librerias/include/encabezado.html" ?>
-            <?php include "../librerias/include/menu1.html" ?>
-            <?php include "../librerias/include/menu2.html" ?>
+            <?php   include '../librerias/include/encabezado.html';
+                    include '../librerias/include/menu1.html'; 
+                    include '../librerias/include/menu2.html'; ?>
             
             <div class="page-wrap">
                 <form action="" method="post">
@@ -43,7 +43,7 @@ include_once "../conexion/conexion.php";
                                 <td><textarea name="cuerpo" style="width: 500px; height: 130px;" ></textarea></td>
                             </tr>
                             <tr>
-                                <td colspan="2"><input type="submit" name="guardar" style="margin-left: 32%;" value="Guardar"/></td>
+                                <td colspan="2"><input type="submit" name="guardar" style="margin-left: 32%;" value="Guardar Noticia"/></td>
                             </tr>
                         </table>
                     </div>

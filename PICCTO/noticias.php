@@ -17,9 +17,9 @@
             include '../librerias/include/menu2.html';?>
         <div class="page">
             <div class="page-wrap">
-                <?php include "../librerias/include/noticias.php";?>
+                <?php include '../librerias/include/noticias.php';?>
             </div>
         </div>
-        <?php include '../librerias/include/footer.html'; ?>
+        <!--<?php include '../librerias/include/footer.html'; ?>-->
     </body>
 </html>
