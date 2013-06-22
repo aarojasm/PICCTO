@@ -12,6 +12,7 @@
         <meta charset="utf-8" />
         <title>Descripción de Noticias</title>
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
+        <script src="../librerias/jquery/jquery-1.10.1.js" type="text/javascript"></script>
     </head>
     <body>           
         <?php include '../librerias/include/encabezado.html';

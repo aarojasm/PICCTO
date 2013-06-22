@@ -8,7 +8,6 @@ body {
 .page {    
     position: relative;
     width: 1024px;
-    top: 20px;
 }
 
 /****Encabezado****/
@@ -17,7 +16,6 @@ body {
     top: 0;
     background-color: #cecccc;
     width: 1024px;
-    border: 2px;
     border-color: blue;
 }
 .logo{
@@ -71,6 +69,7 @@ footer{
     text-align: center;
     float:left;
     width:100%;
+    padding-top: 20px;
 }
 
 .pFooter{
@@ -189,7 +188,7 @@ h2{
 #padre1{
     position: relative;
     width: 1024px;
-    top: 0;
+    top: 20px;
     float: left;
 }
 #hijo1{
@@ -221,7 +220,7 @@ h2{
     position: relative;
     width: auto;
     float: left;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 #hijo4{
@@ -245,7 +244,7 @@ h2{
     position: relative;
     width: 100%;
     float: left;
-    top: 40px;
+    top: 20px;
 }
 
 #hijo6{
@@ -270,22 +269,19 @@ h2{
     top: 40px;
 }
 /*Contacto*/
-.tblFormulario{
-    position: absolute;
-     margin-top: 20px;
-}
 .formulario{
     position: relative;
-    margin-left: 300px;
     margin-top: 0px;
     height: 350px;
+    float: right;
+    margin-right: 60px;
 }
 
 .personas{
     position: relative;
     background-color: blue;
     width: 270px;
-    top: -359px;
+    float: left;
 }
 
 .nombres{
@@ -344,6 +340,7 @@ h2{
 .tituloNoticia{
     font-family: Helvetica;
     font-size: 25px;
+    color: #ff0080;
 }
 .detalleNoticia{
     font-family: Helvetica;

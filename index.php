@@ -1,5 +1,5 @@
 <?php
-    //include_once './conexion/conexion.php';
+    include_once './conexion/conexion.php';
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@
         <meta charset="utf-8"/>
         <title>PICCTO</title>
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+        <script src="./librerias/jquery/jquery-1.10.1.js" type="text/javascript"></script>
         <meta name="description" content="Página de Inicio, que muestra las ultimas noticias sobre nosotros"/>
         <meta name="copyright" content="www.consultorapiccto.cl">
     </head>

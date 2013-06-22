@@ -9,7 +9,7 @@
         <title>Investigación</title>
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
         <meta name="description" content="Página de Investigaciones realizadas"/>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+        <script src="../librerias/jquery/jquery-1.10.1.js" type="text/javascript"></script>
     </head>
     <body>           
         <?php include '../librerias/include/encabezado.html';

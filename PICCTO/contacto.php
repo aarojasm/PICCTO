@@ -30,13 +30,10 @@ include '../conexion/conexion.php';
         <title>Contacto</title>
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
         <meta name="description" content="Página para que personas o empresas nos puedan contactar"/>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+        <script src="../librerias/jquery/jquery-1.10.1.js" type="text/javascript"></script>
         <style>
             .p2{
                 text-align: center;
-            }
-            .page-wrap{
-                height: 750px;
             }
         </style>
     </head>
