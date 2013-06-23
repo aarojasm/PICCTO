@@ -7,9 +7,9 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
-        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Descripción de Noticias</title>
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
         <script src="../librerias/jquery/jquery-1.10.1.js" type="text/javascript"></script>

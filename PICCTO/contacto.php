@@ -1,6 +1,6 @@
 <?php
 include '../conexion/conexion.php';
-//include_once "../admin/envioCorreo.php";
+include '../admin/envioCorreo.php';
     if(isset($_POST['enviar']))
     {
         if($_POST['nombre'] == '' or $_POST['empresa'] == '' or $_POST['telefono'] == '' or $_POST['correo'] == '' or $_POST['direccion'] == '' or $_POST['ciudad'] == '' or  $_POST['cuerpoMensaje'] == '')
@@ -18,7 +18,7 @@ include '../conexion/conexion.php';
             $sql = "INSERT INTO piccto.contacto (nombre, empresa, telefono, email, direccion, ciudad, cuerpo, fecha) VALUES ('$nombre','$empresa','$telefono','$correo','$direccion','$ciudad','$cuerpoMensaje','$fecha')";
             mysql_query($sql);
             echo "<script language='JavaScript'>alert('Ha sido registrado su contacto, pronto nos comunicaremos con usted.'); </script>";
-            //enviarCorreo('aaron.rojas.martinez@gmail.com','Contacto desde Pagina web', $nombre,$empresa,$telefono,$direccion,$ciudad,$correo,$cuerpoMensaje);
+            enviarCorreo('aaron.rojas.martinez@gmail.com','Contacto desde Pagina web', $nombre,$empresa,$telefono,$direccion,$ciudad,$correo,$cuerpoMensaje);
         }
     }
 ?>
@@ -26,7 +26,7 @@ include '../conexion/conexion.php';
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Contacto</title>
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
         <meta name="description" content="Página para que personas o empresas nos puedan contactar"/>

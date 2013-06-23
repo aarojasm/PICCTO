@@ -8,10 +8,16 @@
         {
             $usuario = $_POST['usuario'];
             $clave = $_POST['password'];
-            $sql = "SELECT COUNT(usuario) from piccto.usuario where usuario = '".$usuario."' AND password = '".$clave."'";
+            $encriptarClave = sha1(md5($clave));
+            $sql = "SELECT COUNT(usuario), rol from piccto.usuario where usuario = '".$usuario."' AND password = '".$clave."'";
             $result = mysql_query($sql);
-            $_SESSION['usuario'] = $usuario;
-            $_SESSION['rol'] = $rol;
+            $cantidad = count($result);
+            if($cantidad >0)
+            {
+                $_SESSION['usuario'] = $usuario;
+                $_SESSION['rol'] = $rol;
+                echo $_SESSION['usuario'];
+            }
         }
         else
         { echo "<script languaje='text/javascript'>alert('Deje Completar todos los Campos.')</script>"; }
@@ -22,7 +28,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Login PICCTO</title>
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
         <meta name="description" content="Página que realiza el login para el acceso a la intranet."/>
@@ -48,6 +54,7 @@
                     <div><label>Usuario:</label> <input type="text" required placeholder="Ingrese Usuario" name="usuario"></div>
                     <div><label>Clave:</label> <input type="password" required placeholder="Ingrese Password" name="password"></div>
                     <div><input type="submit" name="enviar" value="Login"></div>
+                    <a href="../login/registro.php">¿No esta Registrado?</a>
                 </form> 
             </div>
         </div>

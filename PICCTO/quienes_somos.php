@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Quiénes Somos</title>
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
         <meta name="description" content="Página de integrantes de la empresa"/>

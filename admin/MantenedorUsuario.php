@@ -3,9 +3,9 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
-        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Mantenedor de Usuario</title>
         <link type="text/css" rel="stylesheet" href="/librerias/css/Style.css"/>
     </head>
