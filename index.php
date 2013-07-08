@@ -16,10 +16,11 @@
         <?php   include './librerias/include/encabezado.html';
                 include './librerias/include/menu1.html'; 
                 include './librerias/include/menu2.html'; 
-                include './librerias/include/aside.html'; ?>
+                include './librerias/include/aside.html'; 
+        ?>
         <div class="page">
             <div class="page-index">
-                <?php include './librerias/include/noticias.php'; ?>
+
             </div>
         <?php include './librerias/include/footer.html'; ?>
         </div>

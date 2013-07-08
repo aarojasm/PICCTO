@@ -9,7 +9,7 @@
             $usuario = $_POST['usuario'];
             $clave = $_POST['password'];
             $encriptarClave = sha1(md5($clave));
-            $sql = "SELECT COUNT(usuario), rol from piccto.usuario where usuario = '".$usuario."' AND password = '".$clave."'";
+            $sql = "SELECT COUNT(usuario), rol from usuario where usuario = '".$usuario."' AND password = '".$clave."'";
             $result = mysql_query($sql);
             $cantidad = count($result);
             if($cantidad >0)
@@ -45,9 +45,11 @@
         </style>
     </head>
     <body>
-            <?php include "../librerias/include/encabezado.html" ?>
-            <?php include "../librerias/include/menu1.html" ?>
-            <?php include "../librerias/include/menu2.html" ?>
+            <?php 
+                include '../librerias/include/encabezado.html'; 
+                include '../librerias/include/menu1.html';
+                include '../librerias/include/menu2.html'; 
+            ?>
         <div class="page">  
             <div class="page-wrap">
                 <form action="" method="post" class="registro">

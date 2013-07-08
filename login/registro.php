@@ -29,7 +29,9 @@ include_once "/conexion/conexion.php";
                     $nombre = $_POST['txtnombre'];
                     $apellido = $_POST['txtapellido'];
                     $email = $_POST['txtemail'];
-                    $sql = "INSERT INTO piccto.usuario (usuario,password, nombre, apellido, usuario) VALUES ('$usuario','$password','$nombre','$apellido','$email')";
+                    $passwordEncriptada = sha1(md5($password));
+                    $sql = "INSERT INTO usuario (usuario,password, nombre, apellido, email, rol) VALUES ('.$usuario.','.$passwordEncriptada.','.$nombre.','.$apellido.','.$email.','1')";
+                    echo $sql;
                     mysql_query($sql);
                     echo 'Usted se ha registrado correctamente.';   
                 }

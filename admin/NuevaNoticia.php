@@ -9,7 +9,7 @@
             $titulo = $_POST[titulo];
             $cuerpo = $_POST[cuerpo];
             $fecha = date('Y-m-d');
-            $sql = "INSERT INTO piccto.noticia (titulo,cuerpo,fecha) values ('$titulo','$cuerpo','$fecha')";
+            $sql = "INSERT INTO noticia (titulo,cuerpo,fecha) values ('$titulo','$cuerpo','$fecha')";
             mysql_query($sql);
             echo "<script language='JavaScript'>alert('Se a Ingresado la Noticia.'); </script>";
         }

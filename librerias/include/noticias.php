@@ -1,5 +1,5 @@
 <?php
-    include_once '../conexion/conexion.php';
+    include '../conexion/conexion.php';
     $sql = 'SELECT titulo, cuerpo, autor, fecha, categoria from noticia order by fecha desc';
     $result = mysql_query($sql);
 ?>

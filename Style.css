@@ -1,46 +1,44 @@
 body {
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     max-width: 1024px;
-    background-color: #ECF0F9;
+    background-color: #cecccc;
+    height: auto;
 }
 
-.page {
+.page {    
     position: relative;
     width: 1024px;
-    margin-top: 13%;
+    top: 93px;
 }
 
 /****Encabezado****/
 .encabezado{
-    background-color: #ECF0F9;
-    border: 10px;
-    border-color: yellow;
-    float: left;
     position:  relative;
+    top: 0;
+    background-color: #cecccc;
     width: 1024px;
-    padding-bottom: 15px;
+    border: 2px;
+    border-color: blue;
 }
 .logo{
+    width: 150px;
     position: relative;
-    float: left;
-    margin-right: 30px;
+    margin-left: 870px;
     border: 0px;
-    border-color: Transparent;
-    width: 145px;
-    margin-top: 0%;
 }
 
 .p1{
-    color: blue;
-    position: relative;
-    float: right;
+    margin: -160px 0 0 0;
+    position: absolute;
     font-family: Calibri;
+    color: blue;
+    font-stretch: normal;
     font-size: 18px;
     font-weight: bold;
 }
 h1{
-    position: relative;
-    /*margin: -110px 0 0 550px;*/
+    position: absolute;
+    margin: -110px 0 0 550px;
     font-family: Calibri;
     color: blue;
     font-stretch: normal;
@@ -64,17 +62,21 @@ clear:both;
 .page-wrap{
     position: relative;
     height: auto;
-    width: 1024px;
+    top: 90px;
 }
 
 /*Footer*/
-footer{
+#page-footer{
     position: relative;
     font-size: 20px;
     text-align: center;
     float:left;
     width:100%;
-    padding-top: 20px;
+    top: 50px;
+}
+.page-footer{
+    width: 1024px;
+    height: 50px;
 }
 
 .pFooter{
@@ -98,10 +100,11 @@ aside{
 }
 
 .mision{
+    margin-left: 5px;
     width: 160px;
 }
 .vision {
-    width: 160px;
+    width: 150px;
 }
 
 h2{
@@ -109,7 +112,6 @@ h2{
     text-align: center;
     font-family: Calibri;
     font-size: 35px;
-    margin: 0 auto;
 }
 /**Contenido de Aside**/
 .p2{
@@ -117,14 +119,13 @@ h2{
     /*font-size: 12px;*/
     text-align: justify;
     font-family: Calibri;
-    padding-left: 10px;
 }
 
 /******MENU 1********/
 .menu{
     position: relative;
-    margin: 0px 0 0 -40px;
-    height: 40px;
+    margin: -15px 0 0 -40px;
+    height: auto;
 }
 #lista1{
     width: 1024px;
@@ -133,25 +134,22 @@ h2{
     display: inline;
 }
 #menu1 li a{    
-    background-color: #0606ed;
-    color: white;
     font-family: Calibri;
     font-size:20px;
-    float:left;
-    padding-left:15px;
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
     text-decoration: none;
-    width: 174.7px;
+    float:left;
+    padding:15px;
+    background-color: #0606ed;
+    color: white;
+    text-align: center;
+    width: 174.8px;
 }
 
  /****Menu 2*****/
 .menu2{
     position: relative;
     margin: 0px 0 0 -40px;
-    height: 60px;
+    height: auto;
 }
 #lista2{
     width: 1024px;
@@ -160,19 +158,16 @@ h2{
     display: inline;
 }
 #lista2 li a{    
+    font-family: Calibri;
+    text-decoration: none;
+    float:left;
+    padding: 10px;
     background-color: #ff1f79;
     border-color: Yellow;
-    border: 0;
+    border: 5px;
     color: White;
-    font-family: Calibri;
-    float:left;
-    padding-left: 95.3px;
-    padding-right: 95.3px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-decoration: none;
-    text-align: center;
     width: 321.3px;
+    text-align: center;
 }
 
 /*quienes somos*/
@@ -181,6 +176,8 @@ h2{
     width: 80px;
     height: 100px;
     margin-left: 95px;
+    margin-top: 0px;
+    padding-top: 30px;
 }
 
 .nombre{
@@ -198,107 +195,100 @@ h2{
 }
 
 #padre1{
-    position: relative;
+    position: absolute;
     width: 1024px;
-    top: 20px;
-    float: left;
+    top: -300px;
 }
 #hijo1{
     margin-left: 50px;
-    position: relative;
     background-color: blue;
-    height: 300px;
+    position: relative;
     width: 270px;
-    float: left;
+    margin-top: 0px;
+    background-color: blue;
+    height: 250px;
 }
 
 #hijo2{
     position: relative;
-    background-color: blue;
-    height: 300px;
     width: 270px;
-    float: left;    
-    margin-left: 50px;
+    margin-left: 375px;
+    margin-top: -250px;
+    background-color: blue;
+    height: 250px;
 }
 #hijo3{
     position: relative;
-    background-color: blue;
-    height: 300px;
     width: 270px;
-    float: left;
-    margin-left: 60px;
+    margin-left: 710px;
+    margin-top: -250px;
+    background-color: blue;
+    height: 250px;
 }
 #padre2{
     position: relative;
     width: auto;
-    float: left;
-    margin-top: 40px;
+    margin-top: 250px;
+    height: 250px;
 }
 
 #hijo4{
     position: relative;
-    height: 300px;
     width: 270px;
+    height: 250px;
+    margin-left: 200px;
     background-color: blue;
-    float: left;
-    margin-left: 220px;
+    margin-top: 0px;
 }
 #hijo5{
     position: relative;
-    background-color: blue;
-    height: 300px;
     width: 270px;
-    float: left;
-    margin-left: 50px;
+    height: 250px;
+    margin-left: 550px;
+    margin-top: -250px;
+    background-color: blue;
 }
 
 #padre3{
     position: relative;
     width: 100%;
-    float: left;
-    top: 20px;
+    top: 30px;
+    height: 350px;
 }
 
 #hijo6{
     position: relative;
-    height: 300px;
     width: 270px;
+    height: 250px;
+    margin-left: 200px;
     background-color: blue;
-    float: left;
-    margin-left: 220px;
 }
 #hijo7{
      position: relative;
-    height: 300px;
     width: 270px;
+    height: 250px;
+    top: -250px;
+    margin-left: 550px;
     background-color: blue;
-    float: left;
-    margin-left: 50px;
 }
 
-#quieneseSomosTexto{
-    position: relative;
-    width: 1000px;
-    height: auto;
-}
-
-.content{
-    position: relative;
-    top: 40px;
-}
 /*Contacto*/
-.formulario {
+.tblFormulario{
+    position: absolute;
+     margin-top: 20px;
+}
+.formulario{
     position: relative;
-    margin-top: 30px;
-    float: right;
-    margin-right: 70px;
+    margin-left: 300px;
+    margin-top: 0px;
+    height: 350px;
 }
 
 .personas{
     position: relative;
     background-color: blue;
     width: 270px;
-    float: left;
+    top: -363px;
 }
 
 .nombres{
@@ -308,7 +298,7 @@ h2{
 
 .texto{
     width: 300px;
-    height: 30px;
+    height: 25px;
 }
 
 .lbl{
@@ -323,29 +313,22 @@ h2{
     height: 30px;
 }
 
-/**Iconos redes sociales**/
+/****/
 #redeSociales{
-    position: relative;
-    float: right;
-    margin-top: -3%;
+    position: absolute;
+    margin-top: 130px;
 }
+
 .icono{
-    border: 0;
     width: 30px;
     height: 30px;
 }
 
 
 /**noticias**/
-.noticia{
-    position: relative;
-    top: 0;
-}
 .divTitulo{
     position: relative;
     top: 0px;
-    font-family: 'Times New Roman';
-    font-size: 20px;
     width: auto;
     height: auto;
 }
@@ -355,40 +338,22 @@ h2{
 }
 
 /*Noticias.php*/
-.tituloNoticia{
+.titulo{
     font-family: Helvetica;
     font-size: 25px;
-    color: #ff0080;
 }
-.detalleNoticia{
+.cuerpo{
     font-family: Helvetica;
-    font-size: 16px;
-}
-.finNoticia{
-    margin-top: 10px;
 }
 
 /*Biblioteca*/
 .imgConstruccion{
     position: relative;
-    top: 0;
+    top: -180px;
+    width: 500px;
 }
 
 /*Login*/
 .registro{
     top: 0;
-}
-
-a:link:visited{
-    color: white;
-}
-
-a:active{
-    position: relative;
-    top: 2px;
-}
-
-
-a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
-cursor: pointer;
 }
