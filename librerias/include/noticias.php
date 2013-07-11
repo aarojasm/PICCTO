@@ -1,3 +1,4 @@
+
 <?php
     include '../conexion/conexion.php';
     $sql = 'SELECT titulo, cuerpo, autor, fecha, categoria from noticia order by fecha desc';
@@ -16,7 +17,7 @@
                 echo '<div class="finNoticia">'.$row['autor'].' '.$fecha.' '.$row['categoria'].'</div>'; 
                 echo '<a href="../PICCTO/leeNoticia.php?id='.$url.'">ver más...</a> &nbsp;'; 
                 //echo '<a href="../admin/editarNoticia.php?id='.$url.'">editar</a></div>';
-                echo '</tr>';
+                echo '<hr/></tr>';
             }
         ?>
     </table>

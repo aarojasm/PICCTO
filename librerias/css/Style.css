@@ -63,6 +63,7 @@ clear:both;
 
 .page-wrap{
     position: relative;
+    float: left;
     height: auto;
     width: 1024px;
 }
